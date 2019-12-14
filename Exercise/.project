@@ -14,4 +14,16 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/Building java programs (Chapter 1) - Google Docs.pdf</name>
+			<type>1</type>
+			<location>/Users/learn/Google Drive/CS/BJP/Ch 1/Building java programs (Chapter 1) - Google Docs.pdf</location>
+		</link>
+		<link>
+			<name>src/naming convention java.png</name>
+			<type>1</type>
+			<location>/Users/learn/Google Drive/CS/BJP/Ch 1/naming convention java.png</location>
+		</link>
+	</linkedResources>
 </projectDescription>
