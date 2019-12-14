@@ -1,0 +1,18 @@
+package chapter_One;
+
+public class Stewie {
+	public static void main (String[] args){ 
+//		System.out.println("//////////////////////"); 
+//		System.out.println("|| Victory is mine! ||"); 
+//		System.out.println("\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\");
+		System.out.print(stewie());
+	}
+	public static String stewie() {
+		String firstLine = "//////////////////////" + "\n";
+		String secondLine = "|| Victory is mine! ||" + "\n";
+		String thirdLine = "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\";
+
+		return firstLine + secondLine + thirdLine;
+		
+	}
+}

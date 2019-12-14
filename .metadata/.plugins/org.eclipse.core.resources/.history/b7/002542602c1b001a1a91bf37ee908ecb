@@ -1,0 +1,18 @@
+package chapter.one.introduction.to.java.programming;
+
+public class Meta {
+	public static void main(String[] args) {
+		System.out.print(draw());
+	}
+	
+	public static String draw() {
+		String firstLine = "class HelloWorld{ \n";
+		String secondLine = "    public static void main(String args[]) { \n";
+		String thirdLine = "        System.out.println(\"Hello, World\"); \n";
+		String fourthLine = "\t} \n";
+		String fifthLine = "}";
+
+		return firstLine + secondLine + thirdLine + fourthLine + fifthLine ;
+	}
+
+}

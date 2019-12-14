@@ -1,0 +1,20 @@
+package chapter.one.introduction.to.java.programming;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class ChapterOneTests {
+	@Test
+	void differenceTest() {
+		String actual = Difference.draw();
+		String expected = "What is the difference between\n" + 
+				"a ' and a \"?  Or between a \" and a \\\"?\n" + 
+				"\n" + 
+				"One is what we see when we're typing our program.\n" + 
+				"The other is what appears on the \"console.\"";
+		assertEquals(expected,actual);
+	}
+
+}

@@ -1,0 +1,19 @@
+package chapter.one.introduction.to.java.programming;
+
+public class MuchBetter {
+	public static void main(String[] args) {
+		System.out.print(draw());
+	}
+	
+	public static String draw() {
+		String firstLine = "";
+		String secondLine = "";
+		String thirdLine = "";
+		String fourthLine = "";
+		String fifthLine = "";
+		String sixthLine = "";
+
+		return firstLine + secondLine + thirdLine + fourthLine + fifthLine + sixthLine;
+	}
+
+}

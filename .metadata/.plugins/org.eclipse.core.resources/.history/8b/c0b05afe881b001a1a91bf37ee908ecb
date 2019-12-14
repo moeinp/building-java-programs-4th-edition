@@ -1,0 +1,38 @@
+package chapter.one.introduction.to.java.programming;
+
+public class EggStop {
+	public static void main(String[] args) {
+		System.out.print(draw());
+	}
+	
+	public static String draw() {
+		String firstImage = top() + bottom() + "\n";
+		String secondImage = top() + bottom() + line() + "\n";
+		String thirdImage = top() + stop() + bottom() + line();
+		return firstImage + secondImage + thirdImage;
+	}
+	
+	public static String top() {
+		String firstLine = "  ______\n";
+		String secondLine = " /      \\\n";
+		String thirdLine = "/        \\\n";
+		return firstLine + secondLine + thirdLine;
+	}
+	
+	public static String stop() {
+		return "|  STOP  |\n";
+	}
+	
+	public static String line() {
+		return "+--------+\n";
+	}
+	
+	public static String bottom() {
+		String firstLine = "\\         /\n";
+		String secondLine = " \\_______/\n";
+		return firstLine + secondLine;
+	}
+
+	
+
+}

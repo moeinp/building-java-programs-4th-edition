@@ -1,0 +1,21 @@
+package chapter.one.introduction.to.java.programming;
+
+public class WellFormed {
+	public static void main(String[] args) {
+		System.out.print(draw());
+	}
+
+	public static String draw() {
+		String firstLine = "	A well-formed Java program has\n";
+		String secondLine = "	a main method with { and }\n";
+		String thirdLine = "	braces.\n";
+		String fourthLine = "\n";
+		String fifthLine = "	A System.out.println statement\n";
+		String sixthLine = "	has ( and ) and usually a\n";
+		String eightLine = "	String that starts and ends\n";
+		String ninthLine = "	with a \" character.\n";
+		String tenthLine = "	(But we type \\\" instead!)\n"
+		return firstLine + secondLine + thirdLine + fourthLine + fifthLine + sixthLine + seventhLine + eightLine + ninthLine;
+	}
+
+}
