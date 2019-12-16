@@ -1,0 +1,15 @@
+package chapter.one.introduction.to.java.programming;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class ChapterOneTests {
+	String diff = Difference.draw();
+	@Test
+	void differenceTest() {
+		assertEquals();
+	}
+
+}

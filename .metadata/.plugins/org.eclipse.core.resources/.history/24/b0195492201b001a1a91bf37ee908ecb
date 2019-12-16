@@ -1,0 +1,18 @@
+package chapter.one.introduction.to.java.programming;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+class StewieTest {
+	String ho = Stewie.stewie();
+
+	@Test
+	void test() {
+		String firstLine = "//////////////////////\n";
+		String secondLine = "|| Victory is mine! ||\n";
+		String thirdLine = "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\";
+		assertEquals(firstLine + secondLine + thirdLine ,ho);
+	}
+
+}

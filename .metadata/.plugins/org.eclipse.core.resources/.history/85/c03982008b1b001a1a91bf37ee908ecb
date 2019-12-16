@@ -1,0 +1,13 @@
+package chapter.one.introduction.to.java.programming;;
+
+public class Stewie {
+	public static void main (String[] args){ 
+		System.out.print(draw());
+	}
+	public static String draw() {
+		String firstLine = "//////////////////////\n";
+		String secondLine = "|| Victory is mine! ||\n";
+		String thirdLine = "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\";
+		return firstLine + secondLine + thirdLine;	
+	}
+}

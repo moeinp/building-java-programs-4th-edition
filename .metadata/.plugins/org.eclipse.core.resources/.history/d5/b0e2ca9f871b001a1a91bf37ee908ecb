@@ -1,0 +1,40 @@
+package chapter.one.introduction.to.java.programming;
+
+public class temp {
+	public static void main(String[] args) {
+		System.out.print(draw());
+	}
+	
+	public static String draw() {
+		String firstEllement = top() + "\n";
+		String secondEllement = top() + middle() + "\n";
+		String thirdLine = "";
+		String fourthLine = "";
+		String fifthLine = "";
+		String sixthLine = "";
+		String seventhLine = "";
+		String eightLine = "";
+		String ninthLine = "";
+		return firstLine + secondLine + thirdLine + fourthLine + fifthLine + sixthLine + seventhLine + eightLine + ninthLine;
+	}
+	public static String top() {
+		String firstLine = "    *****\n";
+		String secondLine = "  *********\n";
+		String thirdLine = "*************\n";
+		return firstLine + secondLine + thirdLine;
+	}
+	public static String middle() {
+		String firstLine = "* | | | | | *\n";
+		String secondLine = "*************\n";
+		return firstLine + secondLine;
+	}
+	
+	public static String end() {
+		String firstLine = "    *****\n";
+		String secondLine = "* | | | | | *\n";
+		String thirdLine = "* | | | | | *\n";
+		String fourthLine = "    *****\n";
+		String fifthLine = "    *****\n";
+		return firstLine + secondLine + thirdLine + fourthLine + fifthLine;
+	}
+}

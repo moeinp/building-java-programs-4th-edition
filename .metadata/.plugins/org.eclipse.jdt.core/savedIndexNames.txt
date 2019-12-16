@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+/Users/learn/Google Drive/CS/Building Java Programs/.metadata/.plugins/org.eclipse.jdt.core
+2784809656.index

@@ -1,0 +1,160 @@
+package chapter.one.introduction.to.java.programming;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
+import org.junit.jupiter.api.Test;
+
+class ChapterOneTests {
+	@Test
+	void differenceTest() {
+		String actual = Difference.draw();
+		String expected = "What is the difference between\n" + "a ' and a \"?  Or between a \" and a \\\"?\n" + "\n"
+				+ "One is what we see when we're typing our program.\n"
+				+ "The other is what appears on the \"console.\"";
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	void EggTest() {
+		String actual = Egg.draw();
+		String expected = "  _______\n" + " /       \\\n" + "/         \\\n" + "-\"-'-\"-'-\"-\n" + "\\         /\n"
+				+ " \\_______/";
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	void Egg2Test() {
+		String actual = Egg2.draw();
+		String expected = "  _______\n" + " /       \\\n" + "/         \\\n" + "\\         /\n" + " \\_______/\n"
+				+ "-\"-'-\"-'-\"-\n" + "  _______\n" + " /       \\\n" + "/         \\\n" + "\\         /\n"
+				+ " \\_______/\n" + "-\"-'-\"-'-\"-\n" + "\\         /\n" + " \\_______/\n" + "  _______\n"
+				+ " /       \\\n" + "/         \\\n" + "-\"-'-\"-'-\"-\n" + "\\         /\n" + " \\_______/";
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	void EggStopTest() {
+		String actual = EggStop.draw();
+		String expected = "  ______\n" + " /      \\\n" + "/        \\\n" + "\\        /\n" + " \\______/\n" + "\n"
+				+ "  ______\n" + " /      \\\n" + "/        \\\n" + "\\        /\n" + " \\______/\n" + "+--------+\n"
+				+ "\n" + "  ______\n" + " /      \\\n" + "/        \\\n" + "|  STOP  |\n" + "\\        /\n"
+				+ " \\______/\n" + "+--------+";
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	void FightSongTest() {
+		ByteArrayOutputStream baos = new ByteArrayOutputStream();
+		PrintStream ps = new PrintStream(baos);
+		System.setOut(ps);
+		FightSong.draw();
+		String exp = "Go, team, go!\n" + "You can do it.\n" + "\n" + "Go, team, go!\n" + "You can do it.\n"
+				+ "You're the best,\n" + "In the West.\n" + "Go, team, go!\n" + "You can do it.\n" + "\n"
+				+ "Go, team, go!\n" + "You can do it.\n" + "You're the best,\n" + "In the West.\n" + "Go, team, go!\n"
+				+ "You can do it.\n" + "\n" + "Go, team, go!\n" + "You can do it.";
+		assertEquals(exp, baos.toString());
+	}
+
+	@Test
+	void LanternsTest() {
+		String exp = "    *****\n" + "  *********\n" + "*************\n" + "\n" + "    *****\n" + "  *********\n"
+				+ "*************\n" + "* | | | | | *\n" + "*************\n" + "    *****\n" + "  *********\n"
+				+ "*************\n" + "\n" + "    *****\n" + "  *********\n" + "*************\n" + "    *****\n"
+				+ "* | | | | | *\n" + "* | | | | | *\n" + "    *****\n" + "    *****";
+		String act = Lanterns.draw();
+		assertEquals(exp, act);
+	}
+
+	@Test
+	void MantraTest() {
+		String actual = Mantra.repeat();
+		String expected = "There's one thing every coder must understand:\n" + "The System.out.println command.\n"
+				+ "\n" + "There's one thing every coder must understand:\n" + "The System.out.println command.";
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	void MetaTest() {
+		String actual = "public class Hello { \n" + 
+				"    public static void main(String[] args) { \n" + 
+				"        System.out.println(\"Hello, world!\"); \n" + 
+				"    } \n" + 
+				"}";
+		String expected = Meta.draw();
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	void MushBetterTest() {
+		String actual = "A \"quoted\" String is\n" + 
+				"'much' better if you learn\n" + 
+				"the rules of \"escape sequences.\"\n" + 
+				"Also, \"\" represents an empty String.\n" + 
+				"Don't forget: use \\\" instead of \" !\n" + 
+				"'' is not the same as \"";
+		String expected = MuchBetter.draw();
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	void ShiningTest() {
+		String expected = "";
+		for(int i = 0; i < 1000; i++) {
+			expected = expected + "All work and no play makes Jack a dull boy.\n";
+		}
+		String actual = Shining.drawXTenXTen();
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	void SpikeyTest() {
+		String actual = "  \\/\n" + 
+				" \\\\//\n" + 
+				"\\\\\\///\n" + 
+				"///\\\\\\\n" + 
+				" //\\\\\n" + 
+				"  /\\";
+		String expected = Spikey.draw();
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	void StarFiguresTest() {
+		String actual = "";
+		String expected = StarFigures.draw();
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	void StewieTest() {
+		String actual = "";
+		String expected = "";
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	void Stewie2Test() {
+		String actual = "";
+		String expected = "";
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	void TwoRocketsTest() {
+		String actual = "";
+		String expected = "";
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	void WellFormedTest() {
+		String actual = "";
+		String expected = "";
+		assertEquals(expected, actual);
+	}
+
+}
