@@ -1,0 +1,32 @@
+package chapter.one.introduction.to.java.programming;
+
+public class FightSong {
+	public static void main(String[] args) {
+		draw();
+	}
+
+	public static void draw() {
+		System.out.println(go()+"\n");
+		System.out.print(go());
+		System.out.print(you());
+		System.out.println(go());
+		System.out.println(go()+"\n");
+		System.out.print(you());
+		System.out.println(go());
+		System.out.print(go());
+
+	}
+
+	public static String go() {
+		String firstLine = "Go, team, go!\n";
+		String secondLine = "You can do it.";
+		return firstLine + secondLine;
+	}
+
+	public static String you() {
+		String firstLine = "You're the best,\n";
+		String secondLine = "In the West.\n";
+		return firstLine + secondLine;
+	}
+
+}

@@ -1,0 +1,29 @@
+package chapter.one.introduction.to.java.programming;
+
+public class Stewie2 {
+	public static void main(String[] args) {
+		System.out.print(draw());
+	}
+	
+	public static String draw() {
+		String firstLine = "";
+		String secondLine = "";
+		String thirdLine = "";
+		String fourthLine = "";
+		String fifthLine = "";
+		String sixthLine = "";
+		String seventhLine = "";
+		String eightLine = "";
+		String ninthLine = "";
+		return firstLine + secondLine + thirdLine + fourthLine + fifthLine + sixthLine + seventhLine + eightLine + ninthLine;
+	}
+	
+	public static String top() {
+		return "";
+	}
+	
+	public static String bottom() {
+		return "";
+	}
+
+}

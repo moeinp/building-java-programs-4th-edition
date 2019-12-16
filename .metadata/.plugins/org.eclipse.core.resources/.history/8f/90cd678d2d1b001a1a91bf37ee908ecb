@@ -1,0 +1,17 @@
+package chapter.one.introduction.to.java.programming;
+
+public class Mantra {
+	public static void main(String[] args) {
+		System.out.println(draw());		
+		System.out.print(draw());
+
+	}
+	
+	public static String draw() {
+		String firstLine = "There's one thing every coder must understand:\n";
+		String secondLine = "The System.out.println command.\n";
+
+		return firstLine + secondLine;
+	}
+
+}

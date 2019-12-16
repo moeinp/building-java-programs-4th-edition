@@ -1,0 +1,38 @@
+package chapter.one.introduction.to.java.programming;
+
+public class Egg2 {
+	public static void main(String[] args) {
+		System.out.print(draw());
+	}
+	
+	public static String draw() {
+		String firstLine = "  _______\n";
+		String secondLine = " /       \\\n";
+		String thirdLine = "/         \\\n";
+		String fourthLine = "-\"-'-\"-'-\"-\n";
+		String fifthLine = "\\         /\n";
+		String sixthLine = " \\_______/";
+
+		return firstLine + secondLine + thirdLine + fourthLine + fifthLine + sixthLine;
+	}
+	
+	public static String top() {
+		String firstLine = "  _______\n";
+		String secondLine = " /       \\\n";
+		String thirdLine = "/         \\\n";
+		return firstLine + secondLine + thirdLine;
+	}
+	
+	public static String middle() {
+		return "-\"-'-\"-'-\"-\n";
+	}
+	
+	public static String bottom() {
+		String firstLine = "\\         /\n";
+		String secondLine = " \\_______/";
+		return firstLine = secondLine;
+	}
+
+	
+
+}
