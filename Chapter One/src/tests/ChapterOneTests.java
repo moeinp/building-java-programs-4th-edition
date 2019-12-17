@@ -1,4 +1,4 @@
-package exercises;
+package tests;
 
 import static org.junit.Assert.assertEquals;
 
@@ -6,6 +6,23 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
 import org.junit.jupiter.api.Test;
+
+import exercises.Difference;
+import exercises.Egg;
+import exercises.Egg2;
+import exercises.EggStop;
+import exercises.FightSong;
+import exercises.Lanterns;
+import exercises.Mantra;
+import exercises.Meta;
+import exercises.MuchBetter;
+import exercises.Shining;
+import exercises.Spikey;
+import exercises.StarFigures;
+import exercises.Stewie;
+import exercises.Stewie2;
+import exercises.TwoRockets;
+import exercises.WellFormed;
 
 class ChapterOneTests {
 	@Test
