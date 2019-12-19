@@ -24,9 +24,41 @@ package exercises;
  */
 public class Window {
 
+	public static final int SIZE = 5;
 
 	public static void main(String[] args) {
+		System.out.println(wndw());
 
+	}
+
+	public static String wndw() {
+		return (fram() + glass() + fram() + glass() + fram());
+	}
+
+	public static String fram() {
+		String ans = "";
+		for (int i = 0; i < 2; i++) {
+			ans = ans + "+";
+			for (int j = 0; j < (SIZE); j++) {
+				ans = ans + "=";
+			}
+		}
+		ans = ans + "+\n";
+		return ans;
+	}
+
+	public static String glass() {
+		String ans = "";
+		for (int k = 0; k < SIZE; k++) {
+			for (int i = 0; i < 2; i++) {
+				ans = ans + "|";
+				for (int j = 0; j < (SIZE); j++) {
+					ans = ans + " ";
+				}
+			}
+			ans = ans + "|\n";
+		}
+		return ans;
 	}
 
 }

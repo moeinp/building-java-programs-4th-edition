@@ -20,8 +20,25 @@ package exercises;
  */
 public class Fibonacci {
 
-	static void main(String[] args) {
-
+	public static void main(String[] args) {
+		System.out.print(fib());
 	}
+	
+	public static String fib() {
+		String ans = "1 ";
+		int i = 0;
+		int j = 1; 
+		int k = 0;
+		for (int m = 0; m <= 10; m++) {
+			k = i + j;
+			i = j;
+			j = k;
+			ans = ans + k + " ";
+		}
+		return ans;
+	}
+	
+	
+	
 
 }

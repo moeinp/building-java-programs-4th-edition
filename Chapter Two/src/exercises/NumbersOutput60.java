@@ -11,9 +11,24 @@ package exercises;
  */
 public class NumbersOutput60 {
 
-
 	public static void main(String[] args) {
-
+		System.out.println(nums60());
 	}
+
+	public static String nums60() {
+		String ans = "";
+		for (int i = 0; i < 6; i++) {
+			for (int j = 0; j < 9; j++) {
+				ans = ans + " ";
+			}
+			ans = ans + "|";
+		}
+		ans = ans + "\n";
+		for(int i = 1; i < 61; i++) {
+			ans = ans + (i % 10);
+		}
+		return ans;
+	}
+	
 
 }

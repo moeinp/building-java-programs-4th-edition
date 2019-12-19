@@ -24,10 +24,42 @@ package exercises;
  * problem.)
  */
 public class DollarFigure2 {
+	public static final int SIZE = 20;
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		System.out.println(dollaFig());
+	}
+	
+	public static String dollaFig() {
+		String ans = "";
+		int big = 0;
+		int dolla = SIZE;
+		int mid = SIZE * 2;
+		for (int i = 0; i < SIZE; i++) {
+			for (int j = 0; j < big; j++) {
+				ans = ans + "*";
+			}
+			for (int j = 0; j < dolla; j++) {
+				ans = ans + "$";
+			}
+			for (int j = 0; j < mid; j++) {
+				ans = ans + "*";
+			}
+			for (int j = 0; j < dolla; j++) {
+				ans = ans + "$";
+			}
+			for (int j = 0; j < big; j++) {
+				ans = ans + "*";
+			}
+			big = big + 2;
+			dolla = dolla - 1;
+			mid = mid - 2;
+			ans = ans + "\n";
+			
+		}
+		return ans;
+		
 	}
 
 }
+

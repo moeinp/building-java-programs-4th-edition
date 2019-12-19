@@ -25,9 +25,31 @@ package exercises;
  * 
  */
 public class StarFigure2 {
-
+	public static final int SIZE = 6;
 	public static void main(String[] args) {
-
+		System.out.println(strFig());
+	}
+	
+	public static String strFig() {
+		String ans = "";
+		int slash = (SIZE - 1) * 4;
+		int star = 0;
+		for (int i = 0; i < SIZE; i++) {
+			for (int j = 0; j < slash; j++) {
+				ans = ans + "/";
+			}
+			for (int j = 0; j < star; j++) {
+				ans = ans + "*";
+			}
+			for (int j = 0; j < slash; j++) {
+				ans = ans + "\\";
+			}
+			slash = slash - 4;
+			star = star  + 8;
+			ans = ans + "\n";
+			
+		}
+		return ans;
 	}
 
 }

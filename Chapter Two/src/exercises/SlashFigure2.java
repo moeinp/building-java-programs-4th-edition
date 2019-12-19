@@ -28,10 +28,31 @@ package exercises;
  * the way described in this problem.)
  */
 public class SlashFigure2 {
-
+public static final int LEVELS = 6;
 
 	public static void main(String[] args) {
-
+		System.out.println(slshFig());
+	}
+	
+	public static String slshFig() {
+		String ans = "";
+		int ex = (LEVELS * 4) - 2; 
+		int slash = 0;
+		for (int i = 0; i < LEVELS; i++) {
+			for (int j = 0; j < slash; j++) {
+				ans = ans + "\\";
+			}
+			for (int j = 0; j < ex; j++) {
+				ans = ans + "!";
+			}
+			for (int j = 0; j < slash; j++) {
+				ans = ans + "/";
+			}
+			ex = ex  - 4;
+			slash = slash + 2; 
+			ans = ans + "\n";
+		}
+		return ans;
 	}
 
 }
