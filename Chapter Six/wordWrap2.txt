@@ -1,0 +1,11 @@
+Write a method called wordWrap that accepts a Scanner repres
+enting an input file as its parameter and outputs each line 
+of the file to the console, 
+word-wrapping all lines that are longer 
+than 60 characters. For example, if a line contains 112 char
+acters, the method should replace it with two lines: one con
+taining the first 60 characters 
+and another containing the final 52 characters. A line 
+containing 217 characters should be wrapped into four lines:
+ three 
+of length 60 and a final line of length 37.
