@@ -1,35 +1,25 @@
 package exercises;
 
+import java.util.Arrays;
+
 public class Contains {
 
 	public static void main(String[] args) {
-
+		int[] list1 = { 1, 6, 2, 1, 4, 1, 2, 1, 8 };
+		int[] list2 = { 1, 2, 1 };
+		System.out.println(contains(list1, list2));
 	}
 
 	public static boolean contains(int[] arr1, int[] arr2) {
-		int count = 1;
-		if (arr2.length > arr1.length) {
-			return false;
-		}
 		for (int i = 0; i < arr1.length; i++) {
 			if (arr1[i] == arr2[0] && i <= arr1.length - arr2.length) {
-				for (int j = 0; j < arr2.length; j++) {
-					if (arr1[i] == arr2[j]) {
-						System.out.println(arr1[i]);
-						System.out.println(arr2[j]);
-
-						count++;
-					}
+				int[] temp = Arrays.copyOfRange(arr1, i, i + arr2.length);
+				if (Arrays.equals(temp, arr2) == true) {
+					return Arrays.equals(temp, arr2);
 				}
-				if (count == arr2.length) {
-					System.out.println("pop");
-
-					return true;
-				}
-				count = 1;
 			}
+
 		}
 		return false;
 	}
-
 }
