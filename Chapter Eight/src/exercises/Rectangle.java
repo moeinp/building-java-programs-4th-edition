@@ -53,5 +53,11 @@ public class Rectangle {
 	public boolean contains(Point p) {
 		return contains(p.getX(), p.getY());
 	}
+	
+public Rectangle union(Rectangle rect) {
+	
+	return rect;
+	
+}
 
 }
