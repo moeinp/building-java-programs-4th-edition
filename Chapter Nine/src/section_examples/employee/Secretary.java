@@ -1,4 +1,4 @@
-package section_examples;
+package section_examples.employee;
 
 public class Secretary extends Employee {
 //	added behavior

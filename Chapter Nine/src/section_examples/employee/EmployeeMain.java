@@ -1,4 +1,4 @@
-package section_examples;
+package section_examples.employee;
 
 public class EmployeeMain {
 	public static void main(String[] args) {

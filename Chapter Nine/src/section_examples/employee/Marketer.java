@@ -1,4 +1,4 @@
-package section_examples;
+package section_examples.employee;
 
 public class Marketer extends Employee {
 //	Override method
