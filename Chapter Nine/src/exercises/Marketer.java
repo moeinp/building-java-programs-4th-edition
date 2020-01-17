@@ -1,4 +1,6 @@
-package section_examples.employee;
+package exercises;
+
+import section_examples.employee.Employee;
 
 public class Marketer extends Employee {
 //	Override method
@@ -9,6 +11,6 @@ public class Marketer extends Employee {
 
 //	added behavior
 	public void advertise() {
-		System.out.println("I'll make you rich");
+		System.out.println("Act now, while supplies last!");
 	}
 }
