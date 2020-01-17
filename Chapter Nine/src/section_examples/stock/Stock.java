@@ -28,5 +28,9 @@ public class Stock {
 		}
 		return (currPrice * totalShares) - (totalCost);
 	}
+	
+	public int getTotalShares() {
+		return totalShares;
+	}
 
 }

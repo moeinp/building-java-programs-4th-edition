@@ -1,5 +1,7 @@
 package section_examples.employee;
 
+import javax.swing.text.html.HTMLDocument.HTMLReader.IsindexAction;
+
 public class EmployeeMain {
 	public static void main(String[] args) {
 		// employee
@@ -29,6 +31,7 @@ public class EmployeeMain {
 		lglSec.takeDictation("file all day");
 		lglSec.fileLegalBriefs();
 		System.out.println();
+		
 
 		System.out.print("Lawyer: ");
 		Lawyer lwyr = new Lawyer();
